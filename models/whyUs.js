@@ -3,7 +3,7 @@
 const mongoose=require('mongoose')
 const Schema=mongoose.Schema
 
-const whyUs=new Schema({
+const whyUsSchema=new Schema({
     title:{
         type:String,
         required:true
@@ -21,6 +21,6 @@ const whyUs=new Schema({
 
 },{timestamps:true})
 
-module.exports=mongoose.model('whyUs',whyUs)
+module.exports=mongoose.model('whyUs',whyUsSchema)
 
 //schema describes the structure of the model
